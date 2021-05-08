@@ -1,0 +1,14 @@
+class Compute {
+    
+    public void rotate(long arr[], long n)
+    {
+        int len = arr.length;
+        long temp = arr[len-1];
+        
+        for(int i = len-2; i >= 0; i--) {
+            arr[i+1] = arr[i];
+            
+        }
+        arr[0] = temp;
+    }
+}
